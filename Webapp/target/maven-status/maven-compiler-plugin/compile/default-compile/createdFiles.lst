@@ -2,6 +2,12 @@ com\mycompany\webapp\domain\Vehiculo.class
 com\mycompany\webapp\controller\Servlet.class
 com\mycompany\webapp\controller\ServletBorrar.class
 com\mycompany\webapp\services\Service.class
+com\mycompany\webapp\services\ServiceUser.class
 com\mycompany\webapp\dao\DAO.class
+com\mycompany\webapp\domain\Login.class
 com\mycompany\webapp\controller\ServletInsert.class
+com\mycompany\webapp\controller\ServletLogout.class
+com\mycompany\webapp\dao\DAOuser.class
+com\mycompany\webapp\domain\User.class
+com\mycompany\webapp\controller\ServletLogin.class
 com\mycompany\webapp\controller\ServletUpdate.class

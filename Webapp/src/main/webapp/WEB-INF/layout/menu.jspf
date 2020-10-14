@@ -1,0 +1,43 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="com.mycompany.webapp.domain.Login"%>
+<%@ page pageEncoding="UTF-8" %>
+<style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+    li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+</style>
+<% Login login=(Login)request.getSession().getAttribute("login");%>
+
+
+<% if(login !=null && login.isLogeado()){
+%> <h3>Hello, <%= login.getName() %>.</h3> 
+    <ul>
+    <li><a href="/Webapp/logout">Logout</a></li>
+    <li><a href="http://localhost:8080/Webapp/insert.html">Insertar vehículo</a></li>
+    <%}else{%>
+    <ul>
+    <li><a href="/Webapp/login">Login</a></li>
+    <%}%>
+    <li><a href="/Webapp/list">Lista de vehículos</a></li>
+    <li><a href="/Webapp/index.html">Volver a Inicio</a></li>
+ </ul>
+ 

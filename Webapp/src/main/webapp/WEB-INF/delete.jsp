@@ -13,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@include file="layout/menu.jspf" %>
          <h2>Eliminado</h2>
          <% HttpSession mySession=request.getSession(false);
          
@@ -26,6 +27,5 @@
             
             <h1></h1>
        
-        <a href="http://localhost:8080/Webapp/list">Volver</a>
     </body>
 </html>

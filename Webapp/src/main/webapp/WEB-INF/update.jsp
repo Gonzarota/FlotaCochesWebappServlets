@@ -13,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@include file="layout/menu.jspf" %>
         <h1>Hello World!</h1>
            
             <% HttpSession mySession=request.getSession(false);
@@ -33,7 +34,7 @@
            
             
             <input type="submit" value="Modificar Vehículo">
-            <input type="hidden" name="id" value=<%=result.getId()%>
+            <input type="hidden" name="id" value=<%=result.getId()%>>
 
         </form>
                        

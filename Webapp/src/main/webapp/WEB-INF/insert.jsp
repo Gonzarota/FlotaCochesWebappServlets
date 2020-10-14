@@ -13,7 +13,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="layout/menu.jspf" %>
+        <h1>¡Gracias por tu venta!</h1>
         <form>
             <% HttpSession mySession=request.getSession(false);
          
@@ -28,7 +29,6 @@
             
                 <h1></h1>
        
-            <a href="http://localhost:8080/Webapp/list">Volver</a>
         </form>
     </body>
 </html>
